@@ -722,7 +722,7 @@ nav {
 .scroll-btn {
   position: fixed;
   right: 2rem;
-  bottom: 5rem;
+  bottom: 20vw;
   width: 4.5rem;
   height: 4.5rem;
   background-color: #e2b646;
