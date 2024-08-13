@@ -1,0 +1,118 @@
+
+
+.ourWork {
+    width: 100%;
+    background-color: rgb(181, 172, 172);
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 3px solid blueviolet; */
+}
+
+.work {
+    border: 1px solid rgb(204, 198, 198);
+    width: 800px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: rgb(149, 140, 140);
+}
+
+h2 {
+    font-size: 50px;
+    word-break: break-all;
+    text-align: center;
+}
+
+/* Center the button container */
+#myBtnContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+    /* border: 2px solid black; */
+}
+
+.work .btnWork {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    
+}
+
+.work .btnWork:hover {
+    background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.work .btnWork.active {
+    background-color: #2d2a2a;
+    color: white;
+}
+
+/* Swiper styles */
+.work .swiper-container {
+    width: 100%;
+    /* height: fit-content; */
+    /* border: 2px solid rgb(219, 93, 93); */
+}
+
+.work .swiper-data {
+    /* border: 2px solid saddlebrown; */
+    margin: 50px;
+}
+
+
+/* Content */
+.work .content {
+    text-align: center;
+    height: 400px;
+    border-radius: 20px;
+    /* background-color: rgb(211, 215, 221); */
+}
+
+.work .content img {
+    /* width: 400px; */
+    height: 400px;
+    object-fit: cover;
+    padding: 50px;
+}
+
+.column {
+    display: none;
+    /* Hide columns by default */
+}
+
+.show {
+    display: block;
+    /* Show the filtered columns */
+}
+
+/* Center the Swiper pagination */
+.swiper-pagination2 {
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+    display: block;
+}
+
+.swiper-pagination2 .swiper-pagination-bullet {
+    
+    background-color: rgb(145, 145, 188); 
+    opacity: 0.5; 
+}
+
+.swiper-pagination2 .swiper-pagination-bullet-active {
+    width: 23px; 
+    height: 23px;
+    background-color: rgb(109, 146, 241); 
+    opacity: 1;
+}
+
+
+
+
+
