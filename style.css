@@ -722,7 +722,7 @@ nav {
 .scroll-btn {
   position: fixed;
   right: 2rem;
-  bottom: 20vw;
+  bottom: 25rem;
   width: 4.5rem;
   height: 4.5rem;
   background-color: #e2b646;
@@ -906,7 +906,9 @@ nav {
     z-index: 200;
   }
   
-
+  .scroll-btn{
+    bottom: 65rem;
+  }
   .banner h1 {
     font-size: 4rem;
     line-height: 5rem;
