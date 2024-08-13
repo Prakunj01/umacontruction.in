@@ -457,7 +457,9 @@ nav {
   width: 17rem;
   height: 30rem;
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
+  border-radius: 50%;
+  overflow: hidden;
   position: relative;
 }
 
@@ -473,7 +475,7 @@ nav {
   height: 100%;
   object-fit: cover;
   opacity: 0.8;
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
   transition: opacity 0.3s;
 }
 
@@ -481,7 +483,7 @@ nav {
   opacity: 0.5;
 }
 
-.card-info {
+/* .card-info {
   position: absolute;
   bottom: 0;
   padding: 2rem;
@@ -502,6 +504,7 @@ nav {
   font-size: 2.5rem;
   line-height: 2.5rem;
   font-weight: 300;
+ 
   color: #eee;
 }
 
@@ -511,9 +514,44 @@ nav {
   font-weight: 500;
   color: #a52a2a;
   margin-bottom: 1rem;
+} */
+.card-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Center-aligns the text inside */
+  padding: 2rem;
+  text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
 }
 
-.card-info p {
+.card:hover .card-info {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-info h2 {
+  font-family: "Baloo Da 2", serif;
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  color: #eee;
+  margin: 0; /* Remove any default margin */
+}
+
+.card-info h3 {
+  font-family: "Muli", serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #a52a2a;
+  margin: 1rem 0; /* Add some margin for spacing */
+}
+
+
+/* .card-info p {
   font-family: "Baloo da 2", serif;
   font-size: 1.4rem;
   line-height: 1.6rem;
@@ -521,9 +559,9 @@ nav {
   color: #eee;
   width: 80%;
   margin-bottom: 2rem;
-}
+} */
 
-.card-info button {
+/* .card-info button {
   width: 10rem;
   height: 3rem;
   background-color: #c29525;
@@ -534,7 +572,7 @@ nav {
   color: #eee;
   border-radius: 0.3rem;
   box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
-}
+} */
 
 .contact {
   width: 100%;
@@ -683,7 +721,7 @@ nav {
 
 .scroll-btn {
   position: fixed;
-  right: 5rem;
+  right: 2rem;
   bottom: 5rem;
   width: 4.5rem;
   height: 4.5rem;
@@ -695,6 +733,7 @@ nav {
   color: #fff;
   box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
+  z-index: 1000;
 }
 
 @media (max-width: 1500px) {
