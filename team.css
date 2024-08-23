@@ -1,0 +1,128 @@
+/* ....................  Team ....................... */
+
+/* .team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #bbc5c8;
+  border: 2px solid red;
+} */
+
+/* .cards-wrapper-part {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  border: 2px solid blue;
+} */
+
+/* .card {
+  width: 25rem;
+  height: 30rem;
+  border: 2px solid green;
+  overflow: hidden;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+} */
+/* 
+.card-img-wrapper {
+  max-width: 25rem;
+  height: 25rem;
+  border-radius: 50rem;
+  border: 3px solid blueviolet;
+} */
+
+/* .card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50rem;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+} */
+
+
+/* .card-info {
+  border: 2px solid red;
+} */
+
+
+/* .card-info h2 {
+  font-family: "Baloo Da 2", serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #432e2e;
+  
+} */
+.team-section {
+    text-align: center;
+    padding: 40px 10px;
+    background-color: rgb(219, 223, 223);
+  }
+  
+  .team-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Reduced gap between the images */
+    margin: 0 10px; 
+  }
+  
+  .team-card {
+    flex: 1;
+    max-width: 200px; /* Adjust based on your design */
+    text-align: center;
+  }
+  
+  .team-card-img-wrapper {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .team-card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .team-card-info h2 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .team-cards-wrapper {
+      justify-content: space-between;
+    }
+    .team-card {
+      flex-basis: 23%; /* Four items in a row */
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .team-card {
+      flex-basis: 45%; /* Two items in a row */
+    }
+  
+    /* Ensure the image container maintains its circular shape */
+    .team-card-img-wrapper {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .team-card-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  

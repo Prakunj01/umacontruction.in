@@ -6,6 +6,9 @@
         align-items: center;
         
       }
+      /* .vastu-section h2{
+        font-size: 2rem;
+      } */
       
       .vastu-left{
        
@@ -20,6 +23,13 @@
         font-size: 2em;
         font-weight: bold;
         text-align: center;
+      }
+
+      /* what we offer  */
+      .smallCard {
+        
+        max-width: 25rem;
+        
       }
       
     

@@ -433,147 +433,7 @@ nav {
 }
 
 
-
-/* ....................  Team ....................... */
-
-.team {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 5rem 20rem 5rem;
-  /* background-color: #bbc5c8; */
-}
-
-.cards-wrapper {
-  display: flex;
-  margin-top: 8rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.card {
-  width: 17rem;
-  height: 30rem;
-  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
-  /* border-radius: 0.5rem; */
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-}
-
-.card-img-wrapper {
-  width: 100%;
-  height: 100%;
-  background-color: #262626;
-  border-radius: 0.5rem;
-}
-
-.card-img-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.8;
-  /* border-radius: 0.5rem; */
-  transition: opacity 0.3s;
-}
-
-.card:hover .card-img-wrapper img {
-  opacity: 0.5;
-}
-
-/* .card-info {
-  position: absolute;
-  bottom: 0;
-  padding: 2rem;
-  text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s;
-}
-
-.card:hover .card-info {
-  bottom: 2rem;
-  opacity: 1;
-  visibility: visible;
-}
-
-.card-info h2 {
-  font-family: "Baloo Da 2", serif;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  font-weight: 300;
- 
-  color: #eee;
-}
-
-.card-info h3 {
-  font-family: "Muli", serif;
-  font-size: 2rem;
-  font-weight: 500;
-  color: #a52a2a;
-  margin-bottom: 1rem;
-} */
-.card-info {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; /* Center-aligns the text inside */
-  padding: 2rem;
-  text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s;
-}
-
-.card:hover .card-info {
-  opacity: 1;
-  visibility: visible;
-}
-
-.card-info h2 {
-  font-family: "Baloo Da 2", serif;
-  font-size: 2.2rem;
-  line-height: 2.5rem;
-  font-weight: 400;
-  color: #eee;
-  margin: 0; /* Remove any default margin */
-}
-
-.card-info h3 {
-  font-family: "Muli", serif;
-  font-size: 2rem;
-  font-weight: 500;
-  color: #a52a2a;
-  margin: 1rem 0; /* Add some margin for spacing */
-}
-
-
-/* .card-info p {
-  font-family: "Baloo da 2", serif;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  font-weight: 300;
-  color: #eee;
-  width: 80%;
-  margin-bottom: 2rem;
-} */
-
-/* .card-info button {
-  width: 10rem;
-  height: 3rem;
-  background-color: #c29525;
-  border: none;
-  font-family: "Baloo Da 2", serif;
-  font-size: 1.4rem;
-  line-height: 1.5rem;
-  color: #eee;
-  border-radius: 0.3rem;
-  box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
-} */
-
+/* ........................Content .............................. */
 .contact {
   width: 100%;
   height: 100vh;
@@ -736,18 +596,35 @@ nav {
   z-index: 1000;
 }
 
-@media (max-width: 1500px) {
-  
 
+@media (max-width: 1440px) {
   .card {
-    width: 34rem;
+    margin-bottom: 8rem;
   }
   .smallCard {
+    margin-bottom: 8rem;
     width: 34rem;
   }
   .VerticalCard {
+    margin-bottom: 8rem;
     width: 34rem;
   }
+
+  .contact-wrapper {
+    width: 90%;
+    height: 55rem;
+  }
+
+  .contact-heading {
+    margin-bottom: 2rem;
+  }
+
+  .field {
+    margin: 2rem 0;
+  }
+
+ 
+ 
 
   .contact-wrapper {
     width: 80%;
@@ -757,9 +634,7 @@ nav {
   .footer-content {
     width: 80%;
   }
-}
 
-@media (max-width: 1400px) {
   .banner h1 {
     font-size: 6rem;
     line-height: 7rem;
@@ -782,48 +657,15 @@ nav {
   
 }
 
-@media (max-width: 1300px) {
-  .team {
-    padding-bottom: 5rem;
-  }
 
-  
 
-  .card {
-    margin-bottom: 8rem;
-  }
-  .smallCard {
-    margin-bottom: 8rem;
-  }
-  .VerticalCard {
-    margin-bottom: 8rem;
-  }
 
-  .contact-wrapper {
-    width: 90%;
-    height: 55rem;
-  }
-
-  .contact-heading {
-    margin-bottom: 2rem;
-  }
-
-  .field {
-    margin: 2rem 0;
-  }
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
   .banner h1 {
     font-size: 5rem;
     line-height: 6rem;
   }
 
-  .cards-wrapper {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 4rem;
-  }
   .banner p {
     font-size: 2.5rem;
   }
@@ -884,9 +726,6 @@ nav {
     order: 1;
     margin-top: 3rem;
   }
-}
-
-@media (max-width: 700px) {
   .logo{
     margin-left: 0px;
     height: 50px;
@@ -895,13 +734,6 @@ nav {
     /* border: 1px solid black; */
   }
   .sidebar {
-    /* width: 40rem;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: -40rem;
-    background-color: #e3b4b4;
-    transition: right 0.5s; */
     margin-top: 70px;
     z-index: 200;
   }
@@ -929,9 +761,10 @@ nav {
   .submit-btn {
     width: 35rem;
   }
-}
-
-@media (max-width: 500px) {
+  .card{
+    max-width: 15rem;
+    height: 15rem;
+  }
   html {
     font-size: 45%;
   }
@@ -952,4 +785,14 @@ nav {
   .footer {
     height: 18rem;
   }
+
+  /* offer section */
+  .card-img-wrapper {
+    max-width: 15rem;
+    height: 15rem;
+    border-radius: 50rem;
+    border: 3px solid blueviolet;
+  }
 }
+
+
