@@ -262,7 +262,7 @@ h4 {
   justify-content: center;
   border-radius: 10px;
   backdrop-filter: blur(30px);
-  background-color: #dddde2;
+  background-color: #cdcdd2;
   margin-left: 0px;
   padding: 2rem;
 }
@@ -282,33 +282,22 @@ h4 {
   margin: 14px 0 40px;
 }
 .card-list .card-item h2 {
-  font-size: 5rem;
-  color: #000000;
-  font-weight: 700;
-}
-.card-list .card-item p {
-  font-size: 1.5rem;
+  font-size: 3.5rem;
   color: #000000;
   font-weight: 500;
   
 }
-
-.card-list .card-item .message-button {
-  font-size: 1.25rem;
-  padding: 10px 35px;
-  color: #030728;
-  border-radius: 6px;
-  font-weight: 500;
-  cursor: pointer;
-  background: #fff;
-  border: 1px solid transparent;
-  transition: 0.2s ease;
-}
-
-.card-list .card-item .message-button:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid #fff;
-  color: #fff;
+/* .card-list .card-item .user-profession {
+  font-size: 1.5rem;
+  color: #000000;
+  font-weight: 400;
+  margin: 1rem 0 1rem;
+} */
+.card-list .card-item .review {
+  font-size: 1.6rem;
+  color: #0a0a0a;
+  font-weight: 400;
+  margin: 2rem 0 3rem;
 }
 
 .test .slider-wrapper .swiper-pagination-bullet {
