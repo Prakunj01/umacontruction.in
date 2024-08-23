@@ -281,11 +281,16 @@ h4 {
   font-weight: 500;
   margin: 14px 0 40px;
 }
+.card-list .card-item h2 {
+  font-size: 5rem;
+  color: #000000;
+  font-weight: 700;
+}
 .card-list .card-item p {
   font-size: 1.5rem;
   color: #000000;
   font-weight: 500;
-  margin: 14px 0 40px;
+  
 }
 
 .card-list .card-item .message-button {
